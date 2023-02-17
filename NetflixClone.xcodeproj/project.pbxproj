@@ -30,6 +30,7 @@
 		873FEB0B299BC8470028C5A2 /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873FEB0A299BC8470028C5A2 /* YoutubeSearchResponse.swift */; };
 		873FEB0D299BCFDA0028C5A2 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873FEB0C299BCFDA0028C5A2 /* TitlePreviewViewController.swift */; };
 		873FEB0F299BD8FB0028C5A2 /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873FEB0E299BD8FB0028C5A2 /* TitlePreviewViewModel.swift */; };
+		87F783DD29A010730021B5F5 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F783DC29A010730021B5F5 /* APIKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		873FEB0A299BC8470028C5A2 /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
 		873FEB0C299BCFDA0028C5A2 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
 		873FEB0E299BD8FB0028C5A2 /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
+		87F783DC29A010730021B5F5 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		873FEACE2998DA6C0028C5A2 /* NetflixClone */ = {
 			isa = PBXGroup;
 			children = (
+				87F783DB29A0105D0021B5F5 /* APIKeys */,
 				873FEAF02998EE3A0028C5A2 /* Managers */,
 				873FEAEF2998EE1B0028C5A2 /* Resources */,
 				873FEAEE2998EDE60028C5A2 /* Models */,
@@ -180,6 +183,14 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		87F783DB29A0105D0021B5F5 /* APIKeys */ = {
+			isa = PBXGroup;
+			children = (
+				87F783DC29A010730021B5F5 /* APIKeys.swift */,
+			);
+			path = APIKeys;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +274,7 @@
 				873FEAD42998DA6C0028C5A2 /* MainTabBarViewController.swift in Sources */,
 				873FEAF22998EE960028C5A2 /* CollectionViewTableViewCell.swift in Sources */,
 				873FEAF6299950C00028C5A2 /* APICaller.swift in Sources */,
+				87F783DD29A010730021B5F5 /* APIKeys.swift in Sources */,
 				873FEAF4299909E60028C5A2 /* HeroHeaderUIView.swift in Sources */,
 				873FEAEB2998DC930028C5A2 /* DownloadsViewController.swift in Sources */,
 				873FEAD02998DA6C0028C5A2 /* AppDelegate.swift in Sources */,
