@@ -32,14 +32,11 @@ class APICaller{
             }
              
             do {
-//                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
-//                print(results)
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
                 completion(.success(results.results))
 
                 
             } catch {
-                //print(error.localizedDescription)
                 completion(.failure(APIError.failedTogetData))
             }
         }
@@ -169,12 +166,8 @@ class APICaller{
             do {
                 let results = try JSONDecoder().decode(YoutubeSearchResults.self, from: data)
                 completion(.success(results.items[0]))
-//                let results = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
-//                print(results)
-
             } catch {
                 completion(.failure(APIError.failedTogetData))
-//                print(error.localizedDescription)
             }
         }
         task.resume()

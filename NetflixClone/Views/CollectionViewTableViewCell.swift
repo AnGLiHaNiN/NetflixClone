@@ -71,9 +71,6 @@ class CollectionViewTableViewCell: UITableViewCell {
 
 extension CollectionViewTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-//        cell.backgroundColor = .green
-//        return cell
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TitleCollectionViewCell.identifier, for: indexPath) as? TitleCollectionViewCell else {
             return UICollectionViewCell()
@@ -127,19 +124,6 @@ extension CollectionViewTableViewCell: UICollectionViewDataSource, UICollectionV
             }
         return config
     }
-    
-    
-//    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemsAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
-//        let config = UIContextMenuConfiguration(
-//            identifier: nil,
-//            previewProvider: nil) { _ in
-//                let downloadAction = UIAction(title: "Download ", subtitle: nil, image: nil, identifier: nil, discoverabilityTitle: nil, state: .off) { _ in
-//                    //self?.downloadTitleAt(indexPath: indexPath)
-//                }
-//                return UIMenu(title: "", image: nil, identifier: nil, options: .displayInline, children: [downloadAction])
-//            }
-//        return config
-//    }
     
     
     //Chat GPT

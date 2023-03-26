@@ -31,7 +31,7 @@ class SearchResultsViewController: UIViewController {
     }()
 
 
-
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -81,9 +81,5 @@ extension SearchResultsViewController: UICollectionViewDataSource, UICollectionV
                 print(error.localizedDescription)
             }
         }
-        
-
     }
-    
-    
 }

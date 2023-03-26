@@ -23,7 +23,7 @@ class TitlePreviewViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 18, weight: .regular)
         label.text = "This is the good movie!"
-        label.numberOfLines = 0 // Установите количество строк равным 0 для автоматического переноса строк
+        label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         return label
     }()

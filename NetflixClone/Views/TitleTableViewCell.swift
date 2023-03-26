@@ -16,14 +16,7 @@ class TitleTableViewCell: UITableViewCell {
     private let playTitleButton: UIButton = {
         let button = UIButton()
         let image = UIImage(systemName: "play.circle", withConfiguration: UIImage.SymbolConfiguration(pointSize: 30))
-        
-//        let newSize = CGSize(width: 30, height: 30)
-//        let resizedImage = UIGraphicsImageRenderer(size: newSize).image { _ in
-//            systemImage?.draw(in: CGRect(origin: .zero, size: newSize))
-//        }
-//        //button.setImage(UIImage(systemName: "play.circle"), for: .normal)
-//        let tintedImage = resizedImage.withRenderingMode(.alwaysTemplate)
-//        button.setImage(tintedImage, for: .normal)
+
         button.setImage(image, for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +27,7 @@ class TitleTableViewCell: UITableViewCell {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.numberOfLines = 0 // Установите количество строк равным 0 для автоматического переноса строк
+        label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         return label
     }()
@@ -77,7 +70,6 @@ class TitleTableViewCell: UITableViewCell {
             playTitleButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             playTitleButton.widthAnchor.constraint(equalToConstant: 30),
             playTitleButton.heightAnchor.constraint(equalToConstant: 30),
-            //playTitleButton.widthAnchor.constraint(equalToConstant: 40)
         ]
         
         NSLayoutConstraint.activate(titlesPosterUIImageViewConstraints)
